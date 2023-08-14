@@ -29,5 +29,6 @@ set `name` = "hd"
 where `name` = "pct";
 set sql_safe_updates = 1;
 
-
+ALTER TABLE `student_management`.`classroom` 
+RENAME TO  `student_management`.`class_room` ;
 
