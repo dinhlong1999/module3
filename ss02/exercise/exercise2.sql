@@ -10,7 +10,7 @@ customer_age int
 create table `order`(
 order_id int primary key auto_increment,
 order_date date,
-order_total_prince double,
+order_total_price double,
 customer_id int,
 foreign key(customer_id) references customer(customer_id)
 );
@@ -30,3 +30,14 @@ foreign key(order_id) references `order`(order_id),
 foreign key(product_id) references `product`(product_id)
 );
 
+ALTER TABLE `ss02_bai_tap2`.`customer` 
+RENAME TO  `ss02_bai_tap2`.`customers` ;
+
+ALTER TABLE `ss02_bai_tap2`.`order` 
+RENAME TO  `ss02_bai_tap2`.`orders` ;
+
+ALTER TABLE `ss02_bai_tap2`.`order_detail` 
+RENAME TO  `ss02_bai_tap2`.`orders_detail` ;
+
+ALTER TABLE `ss02_bai_tap2`.`product` 
+RENAME TO  `ss02_bai_tap2`.`products` ;
