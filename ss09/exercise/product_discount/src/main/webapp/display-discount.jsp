@@ -11,8 +11,8 @@
     <title> Calculate Discount</title>
 </head>
 <body>
-Discount Amount = ${discount_Amount}
+Discount Amount = ${discountAmount}
 <br>
-Discount Price = ${result}
+Discount Price = ${discountPrice}
 </body>
 </html>
