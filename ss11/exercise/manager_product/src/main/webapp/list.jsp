@@ -25,10 +25,8 @@
 <body>
 <h1>Manager product </h1>
 <h3>Create product:  <a href="product?action=showFormCreate">Add product</a> </h3>
-<h3>Edit product: <a href="product?action=showFormEdit">Edit product </a></h3>
 <h3>Search product: <a href="product?action=showFormSearch">Search product</a></h3>
-<h3>Delete product: <a href="product?action=showFormDelete">Delete product</a></h3>
-<h3>Search product: <a href="product?action=showFormSearch">search</a></h3>
+
 <table border="1px">
     <thead>
     <tr>

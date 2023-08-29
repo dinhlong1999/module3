@@ -25,11 +25,16 @@ public class ProductService implements  IProductService {
 
     @Override
     public void deleteProduct(int id) {
-
+    productRepository.deleteProduct(id);
     }
 
     @Override
     public List<Product> findByName(String name) {
         return productRepository.findByName(name);
+    }
+
+    @Override
+    public Product findById(int id) {
+       return productRepository.findById(id);
     }
 }

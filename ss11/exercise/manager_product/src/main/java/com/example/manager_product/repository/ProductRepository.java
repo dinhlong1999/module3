@@ -12,6 +12,8 @@ public class ProductRepository implements IProductRepository {
     private static final String INSERT = "insert into product(`name`,price,`describe`,producer)\n" +
             "values (?,?,?,?);";
     private static final String UPDATE = "UPDATE `product` SET `name` = ? , `price` = ?, `describe` = ?, `producer` = ? WHERE (`id` = ?);";
+    private static final String DELETE = "UPDATE `product` SET `isDelete` = ? WHERE (`id` = ?);";
+
 
     @Override
     public List<Product> showAll() {
@@ -21,12 +23,15 @@ public class ProductRepository implements IProductRepository {
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(SELECT);
             while (resultSet.next()) {
-                int id = resultSet.getInt("id");
-                String name = resultSet.getString("name");
-                int price = resultSet.getInt("price");
-                String describe = resultSet.getString("describe");
-                String producer = resultSet.getString("producer");
-                productList.add(new Product(id, name, price, describe, producer));
+                if (!resultSet.getBoolean("isDelete")){
+                    int id = resultSet.getInt("id");
+                    String name = resultSet.getString("name");
+                    int price = resultSet.getInt("price");
+                    String describe = resultSet.getString("describe");
+                    String producer = resultSet.getString("producer");
+                    productList.add(new Product(id, name, price, describe, producer));
+
+                }
 
             }
         } catch (SQLException e) {
@@ -68,6 +73,15 @@ public class ProductRepository implements IProductRepository {
 
     @Override
     public void deleteProduct(int id) {
+        Connection connection = BaseRepository.getConnection();
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(DELETE);
+            preparedStatement.setInt(1,1);
+            preparedStatement.setInt(2,id);
+            preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
 
     }
 

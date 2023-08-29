@@ -18,30 +18,34 @@
         <table>
             <tr>
                 <td><label>Enter id product to update</label></td>
-                <td><input type="number" name="id" placeholder="Enter id product to update"></td>
+                <td><input type="number" name="id" value="${product.id}" placeholder="Enter id product to update"></td>
             </tr>
             <tr>
                 <td><label>Name:</label></td>
-                <td><input type="text" name="name" id="name" placeholder="Enter name to update"></td>
+                <td><input type="text" name="name" id="name" value="${product.name}" placeholder="Enter name to update">
+                </td>
             </tr>
             <tr>
                 <td><label>Price:</label></td>
-                <td><input type="text" name="price" id="price" placeholder="Enter price to update"></td>
+                <td><input type="text" name="price" id="price" value="${product.price}"
+                           placeholder="Enter price to update"></td>
             </tr>
             <tr>
                 <td><label>Describe:</label></td>
-                <td><input type="text" name="describe" id="describe" placeholder="Enter Describe to update"></td>
+                <td><input type="text" name="describe" id="describe" value="${product.describe}"
+                           placeholder="Enter Describe to update"></td>
             </tr>
             <tr>
                 <td><label>Producer:</label></td>
-                <td><input type="text" name="producer" id="producer" placeholder="Enter Producer to update"></td>
+                <td><input type="text" name="producer" id="producer" value="${product.producer}"
+                           placeholder="Enter Producer to update"></td>
             </tr>
             <tr>
                 <td></td>
-                <td> <input type="submit" value="Update"></td>
+                <td><input type="submit" value="Update"></td>
             </tr>
         </table>
-        
+
     </fieldSet>
 </form>
 </body>
