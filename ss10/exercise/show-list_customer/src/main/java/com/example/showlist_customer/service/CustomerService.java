@@ -7,7 +7,7 @@ import com.example.showlist_customer.repository.ICustomerRepository;
 import java.util.List;
 
 public class CustomerService implements  ICustomerService{
-    ICustomerRepository customerRepository = new CustomerRepository();
+    private  ICustomerRepository customerRepository = new CustomerRepository();
     @Override
     public List<Customer> showAll() {
         return customerRepository.showAll();

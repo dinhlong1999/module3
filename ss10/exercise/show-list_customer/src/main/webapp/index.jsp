@@ -7,6 +7,6 @@
 <body>
 <h1><%= "Hello World!" %></h1>
 <br/>
-<a href="/student-Servlet">Hello Servlet</a>
+<a href="customers">Hello Servlet</a>
 </body>
 </html>
