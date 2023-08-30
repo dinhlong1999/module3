@@ -99,8 +99,10 @@ public class ProductServlet extends HttpServlet {
                 break;
             case "search":
                 search(request, response);
+                break;
             case "edit":
                 edit(request, response);
+                break;
             case "delete":
                 delete(request, response);
                 break;
