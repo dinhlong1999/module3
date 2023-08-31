@@ -9,6 +9,7 @@
 <h1>User Manager</h1>
 
 <a href="users">list of users</a>
+<a href="users?action=addTransaction">list</a>
 
 </body>
 </html>

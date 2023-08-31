@@ -12,4 +12,14 @@ public interface IUsersService {
      void deleteUser(int id) throws SQLException;
      boolean updateUser(User user) throws SQLException;
      List<User> searchByAddress(String address);
+     User getUserById(int id);
+     void insertUserStore(User user);
+     void addUserTransaction(User user, List<Integer> permission);
+     void insertUpdateWithoutTransaction();
+     void insertUpdateUseTransaction() ;
+     List<User> getAllUserStore();
+     void editUserStore(User user);
+     void deleteUserStore(int id);
+     void insertUserTransaction(User user);
+
 }

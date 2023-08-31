@@ -38,4 +38,45 @@ public class UserService implements IUsersService {
     public List<User> searchByAddress(String address) {
         return userRepository.searchByAddress(address);
     }
+
+    @Override
+    public User getUserById(int id) {
+       return userRepository.getUserById(id);
+    }
+
+    @Override
+    public void insertUserStore(User user) {
+        userRepository.insertUserStore(user);
+    }
+
+    @Override
+    public void addUserTransaction(User user, List<Integer> permission) {
+        userRepository.addUserTransaction(user,permission);
+    }
+
+    @Override
+    public void insertUpdateWithoutTransaction() {
+        userRepository.insertUpdateWithoutTransaction();
+    }
+
+    @Override
+    public void insertUpdateUseTransaction() {
+        userRepository.insertUpdateUseTransaction();
+    }
+
+    @Override
+    public List<User> getAllUserStore() {
+        return  userRepository.getAllUserStore();
+    }
+    public void editUserStore(User user){
+        userRepository.editUserStore(user);
+    }
+
+    @Override
+    public void deleteUserStore(int id) {
+        userRepository.deleteUserStore(id);
+    }
+    public void insertUserTransaction(User user){
+        userRepository.insertUserTransaction(user);
+    }
 }

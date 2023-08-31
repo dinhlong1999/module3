@@ -31,9 +31,19 @@
                 <td><input type="text" name="country" placeholder="Enter country"></td>
             </tr>
             <tr>
+<%--                <td>Permission</td>--%>
+<%--                <td>--%>
+<%--                    <input type="checkbox" name="add" size="15"/> add |--%>
+<%--                    <input type="checkbox" name="edit" size="15"/> edit |--%>
+<%--                    <input type="checkbox" name="delete" size="15"/> delete |--%>
+<%--                    <input type="checkbox" name="view" size="15"/> view--%>
+<%--                </td>--%>
+            </tr>
+            <tr>
                 <td><input type="submit" value="Create"></td>
                 <td></td>
             </tr>
+
         </table>
     </fieldSet>
 
