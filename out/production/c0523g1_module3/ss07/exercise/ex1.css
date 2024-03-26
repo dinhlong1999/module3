@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+#header{
+    height: 50px;
+    padding: 0;
+    margin-top: 0;
+    background-color: black;
+    border: 1px solid #CDCDCD;
+
+}
+#header li, #header ul{
+    padding: 0;
+    margin: 0;
+}
+#header li {
+    position: relative;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#header li a {
+    width: 100px;
+    height: 30px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    background-color: black;
+    color: white;
+}
+#header ul ul  li a{
+    width: 200px;
+    text-align: left;
+    padding-left: 10px;
+}
+#header li a:hover {
+    background-color: gray;
+}
+#header ul  ul{
+    position: absolute;
+    top: 30px;
+    left: 15px;
+    visibility: hidden;
+}
+#header ul li:hover ul{
+    visibility: visible;
+}
+
+#temp{
+    width: 20%;
+    height: 880px;
+    background: #CDCDCD;
+    float: left;
+}
+#contact{
+    width: 60%;
+    background: white;
+    float: left;
+    margin: 20px;
+}
+#slideBar{
+    width: 17%;
+    height: 880px;
+    background: #CDCDCD;
+    float: left;
+    right: 0;
+    text-align: center;
+}
+button{
+    position: relative;
+    top: 90px;
+}
+#but1{
+    width: 200px;
+    height: 80px;
+    margin-bottom: 60px;
+}
+#but2{
+    width: 200px;
+    height: 80px;
+}
+#footer{
+    clear: both;
+    text-align: center;
+    background: gray;
+    height: 80px;
+}
+h2, p{
+    margin: 15px;
+}

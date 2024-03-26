@@ -1,0 +1,24 @@
+body{
+    background: bisque ;
+    margin: 15px;
+}
+
+@media only screen and (max-width:700px){
+    .rwd{
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 500px){
+    .rwd{
+        width: 100%;
+    }
+}
+.rwd{
+
+    float: left;
+    margin: 30px;
+}
+p{
+    clear: both;
+    margin: 10px;
+}

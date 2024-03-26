@@ -9,6 +9,8 @@
       <change beforePath="$PROJECT_DIR$/../../../server-time/src/main/java/com/example/servertime/HelloServlet.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../ss08/exercise/css2.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss08/exercise/css2.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../ss08/exercise/exercise2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss08/exercise/exercise2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +51,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/c0523g1_module3/ss09/exercise/product_discount",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -159,6 +162,8 @@
       <option name="presentableId" value="Default" />
       <updated>1693205732194</updated>
       <workItem from="1693205733187" duration="9046000" />
+      <workItem from="1693217989818" duration="763000" />
+      <workItem from="1693221678429" duration="190000" />
     </task>
     <servers />
   </component>
